@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
 
-const Hello = ({ name }) => {
+const Hello = (props) => {
   return (
-    <div>
+    <h1>
       Hello,
-      {name}
-    </div>
+      {props.name}
+    </h1>
   );
 };
 
 const root = document.getElementById('root');
 if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+  ReactDOM.render(<Hello name="World By Tomo" />, root);
 }
